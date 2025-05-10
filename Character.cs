@@ -21,12 +21,6 @@ namespace Test
             BaseDamage = baseDamage;
         }
 
-        protected Character(string name, int health)
-        {
-            Name = name;
-            Health = health;
-        }
-
         public void PerformAttack(Character target)
         {
             Attack?.Invoke(target);
